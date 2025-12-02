@@ -1,0 +1,390 @@
+/*Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/*Body*/
+body{
+    font-family: 'Arial', sans-serif;  
+    height : 2800px 
+    
+}
+
+/*Header*/
+.header{
+    background-color: #2C2925;
+    width: 100%;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.main-content{
+    width: 90%;
+    margin: 0 auto;
+}
+.header .body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*logo*/
+.logo{
+    width: 60px;
+    height: auto;
+    border-radius: 50%
+}
+
+/*Navigation*/
+.nav{
+    margin-left: auto;
+    margin-right: 45px;
+}
+
+.nav ul {
+    
+    display: flex;
+    align-items: center;
+    gap: 45px;   
+}
+
+.nav ul li a {
+    color: #f1c40f;
+    font-weight: bold;
+    text-align: right;
+    font-size: 16px;
+    transition: color 0.3s ease;
+
+}
+.nav ul li a:hover {
+    color: #e67e22;
+}
+
+/*Search icon*/
+
+
+.search-icon{
+    
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+    
+}
+
+/*Hero Section*/
+.hero{
+    margin-top: 120px; /*Để tránh bị header đè lên hình */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero img{   
+    width: 75%;
+    border-radius: 360px 360px 360px 360px ;
+}
+
+/*Product title*/
+.product-title{
+    text-align: center;
+    margin: 50px auto; 
+}
+
+.product-title h2{
+    font-size: 32px;
+    font-weight: Bold;
+    color: #a52a2a;
+    letter-spacing: 2px;    
+    background-color: #F7F3F3;  /* màu nền trắng nhạt */
+    padding: 30px 0;
+
+}
+
+
+/*Product section*/
+
+.product-section {
+    background-color: #F7F3F3; /* màu nền trắng nhạt */
+    padding: 40px 0;
+    min-height: 380px; /* Đảm bảo chiều cao tối thiểu */
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    width: 260px;
+    text-align: center;
+    justify-content: center;
+    padding: 20px 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.product-card img {
+    width: 70%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 16px;
+    margin: 0 0 10px;
+    font-weight: 600;
+}
+
+.product-card p {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.order-button {
+    background-color: #a24130;
+    color: white;
+    border: none;
+    padding: 10px 0;
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.order-button:hover {
+    background-color: #8a3627;
+}
+
+/*Find a restaurant */
+/* Restaurant Locator Section */
+
+.restaurant-locator {
+    position: relative;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.locator-overlay {
+    background-color: rgba(139, 0, 0, 0.6); /* Red transparent overlay */
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.locator-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.locator-form h2 {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+.locator-form select {
+    width: 220px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    font-size: 14px;
+}
+
+
+.locator-form button {
+    width: 220px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #ffc107;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.locator-form button:hover {
+    background-color: #e0a800;
+}
+
+/*Section-Highlight*/
+/* Section background full-width with image */
+.section-highlight {
+    position: relative;
+    width: 100%;
+    height: 700px; /* hoặc bạn có thể điều chỉnh theo ý muốn */
+    background-image: url('./assets/img/Cheer-Highlight.jpg'); /* 👉 Đường dẫn ảnh của bạn */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 60px;
+    color: white;
+}
+
+.highlight-content {
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.5); /* lớp nền tối mờ để chữ dễ đọc */
+    padding: 30px;
+    border-radius: 30px;
+}
+
+.highlight-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #ffcc00; /* màu vàng nổi bật */
+}
+
+.highlight-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.btn-more {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #b54829;
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-more:hover {
+    background-color: #93391e;
+}
+
+
+
+
+
+/*Footer section */
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #2f2f2f;
+    color: #ffff;
+    padding: 20px 0;
+    height: 300px;
+}
+.footer-section
+.footer-section {
+    text-align: left;
+}
+
+.footer-section h3 {
+    color: #ffcc00;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    margin: 5px 0;
+    font-size: 1.2em;
+    color: #ffffff;
+
+}
+
+.footer-section a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.icon {
+    color: #ffffff;
+    margin-right: 5px;
+}
+
+/* Cart Popup */
+.cart-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.cart-popup.hidden {
+    display: none;
+}
+
+.cart-box {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* Dark Mode */
+body.dark {
+    background: #1c1c1c;
+    color: #f1f1f1;
+}
+
+body.dark .header {
+    background: #111;
+}
+
+body.dark .product-card {
+    background: #2b2b2b;
+    color: white;
+}
+
+.dark-mode-toggle {
+    color: white;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+
+/* Adjust for smaller screens */
+@media (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .footer-section {
+        margin: 10px 0;
+    }
+}

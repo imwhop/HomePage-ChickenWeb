@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friend & Chicken </title>
+    <link rel="stylesheet" href="chickenweb.css">
+    
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header fixed">
+        <div class="main-content"> <!--dùng để bọc các phẩn tử navigation or logo trong header-->
+            <div class="body">
+                <!-- Logo Section -->
+                <img src="./assets/img/Chicken logo.jpg" alt="Chicken&Friend" class="logo">
+                <!--Navigation--> 
+                <!--Cấu trúc " nav.nav>ul>li*4>a{Home}"-->
+                <nav class="nav">
+                    <ul style="list-style-type: none;" >  
+                        <li><a href="#!">Home</a></li>
+                        <li><a href="#!">Menu</a></li>
+                        <li><a href="#!">News</a></li>
+                        <li><a href="#!">Restaurant</a></li>
+                        <li><a href="#!">About Us</a></li>
+                        <li><a href="#!">Cart</a></li>
+                    </ul>
+                </nav>
+                <div class="search-icon">
+                    <img src="./assets/img/search.svg" alt="Search">
+                </div>   
+                <div class="dark-mode-toggle">🌙</div>
+        
+            </div>
+        </div>
+    </header>.
+    <!--Hero image-->
+    <section class="hero">
+        <img src="./assets/img/hotchicken.jpg" alt="Fried Chicken" >
+    </section>
+
+    <!--Product title-->
+    <section class = "product-title">
+        <h2>PRODUCTS</h2>
+    </section>
+
+    <section class ="product-section">
+        
+        <div class="product-container">   
+            <!--product cards container -->               
+                    <div class ="product-card">
+                        <img src="./assets/img/Sweet and Sour Chicken Rice.jpg" alt="Sweet and Sour Chicken Rice">
+                        <h3>Sweet and Sour Chicken Rice</h3>
+                        <p>Price:4,5 $</p>
+                        <button class ="order-button">ORDER</button>
+                    </div>                
+                    <div class ="product-card">
+                        <img src="./assets/img/Chicken Spaghetti.jpg" alt="Chicken Spaghetti">
+                        <h3>Chicken Spaghetti</h3>
+                        <p>Price:6,4 $</p>
+                        <button class ="order-button">ORDER</button>
+                    </div>
+                    <div class ="product-card">
+                        <img src="./assets/img/French Fries.png" alt="French Fries">
+                        <h3>French Fries</h3>
+                        <p>Price:3 $</p>
+                        <button class ="order-button">ORDER</button>
+                    </div>
+                    <div class ="product-card">
+                        <img src="./assets/img/Group Combo B.png" alt="Group Combo B">
+                        <h3>Group Combo B</h3>
+                        <p>Price:24,4 $</p>
+                        <button class ="order-button">ORDER</button>
+                    </div>                        
+        </div>
+    </section>
+<!--Restaurant location -->
+    <section class="restaurant-locator" style="background: url('./assets/img/chicken\ restaurant.jpg') no-repeat center center/cover;">
+        <div class="locator-overlay">
+            <div class="locator-form">
+                <h2>FIND A <br>RESTAURANT <br>NEAR YOU</h2>
+                <select>
+                    <option disabled selected hidden >City</option> 
+                    <option>Ho Chi Minh</option>
+                </select>
+                <select>
+                    <option disabled selected hidden>District</option>
+                    <option>1</option>
+                    <option>3</option>
+                    <option>9</option>
+                </select>
+                <button>Search</button>
+            </div>
+        </div>
+    </section>
+
+<!--Section Highlight -->
+<section class ="section-highlight">
+    <div class="highlight-content">
+        <div class="highlight-text">
+            <h2>About Friend & Chicken</h2>
+            <p>
+                We believe that fried chicken is more than just a meal,
+                it's a fantastic way for friends and loved ones to gather and share joyful moments.
+            </p>
+            <p>
+                At Friend & Chicken, you'll enjoy crispy, delicious fried chicken with a unique flavor, made from fresh ingredients and a special recipe. 
+                Come to Friend & Chicken to experience the exquisite taste of fried chicken and create unforgettable memories!
+            </p>
+            <a href="#!" class="btn-more">Detail</a>
+        </div>
+        
+    </div>
+</section>
+
+<!--Footer Section -->
+<footer class="footer">
+        <div class="footer-section">
+            <h3>FRIEND & CHICKEN</h3>
+            <p><span class="icon">📍</span> TPHCM</p>
+            <p><span class="icon">📞</span> (+84) 789822628</p>
+            <p><span class="icon">📧</span> Friend&Chicken@gmail.com</p>
+            <p><span class="icon">🌐</span> Friend&Chicken.com</p>
+        </div>
+        <div class="footer-section">
+            <h3>Information</h3>
+            <p><a herf="#">Home</a></p>
+            <p><a herf="#">Menu</a></p>
+            <p><a herf="#">Restaurant</a></p>
+        </div>
+        <div class="footer-section">
+            <h3>Connect with Friend & Chicken</h3>
+            <p><a href="#">Facebook</a></p>
+            <p><a href="#">Instagram</a></p>
+        </div>
+    </footer>
+
+        <div class="cart-popup hidden">
+        <div class="cart-box">
+            <h3>Your Cart</h3>
+            <ul class="cart-items"></ul>
+            <button class="close-cart">Close</button>
+        </div>
+    </div>
+
+<script src="chickenweb.js"></script>
+
+</body>
+</html>
